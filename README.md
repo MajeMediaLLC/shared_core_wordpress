@@ -61,12 +61,21 @@ Downloaded from `https://wordpress.org/download/` on 3/20/2015 via `latest.tar.g
         Alias /wp-content /path/to/shared_core_wordpress/sites/sitea.example.com
 
         <Directory /path/to/shared_core_wordpress/shared_core>
-                Options Indexes FollowSymLinks MultiViews
-                AllowOverride All 
+                Options -Indexes +FollowSymLinks +MultiViews
+                AllowOverride All
+                Order allow,deny
+                allow from all
+        </Directory>
+
+        <Directory /path/to/shared_core_wordpress/sites/sitea.majemedia.com>
+                Options -Indexes +FollowSymLinks +MultiViews
+                AllowOverride All
                 Order allow,deny
                 allow from all
         </Directory>
     </VirtualHost>
+
+
 
 ## Tested Against Versions
 - PHP 5.4
