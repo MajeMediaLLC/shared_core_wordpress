@@ -32,7 +32,6 @@ $servervars  =  $sites[ $_SERVER[ 'SERVER_NAME' ] ];
 define( 'WP_CONTENT_DIR', $servervars[ 'wpcontentdir' ] );
 
 // The below is all standard wordpress config setup with shared variables in place
-define( 'WPCACHEHOME', '/var/www/wphosts/shared_plugins/wp-super-cache/' ); //Added by WP-Cache Manager
 define( 'WP_CACHE', $servervars[ 'wpcache' ] ); //Added by WP-Cache Manager
 
 // ** MySQL settings - You can get this info from your web host ** //
