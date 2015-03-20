@@ -4,7 +4,9 @@
 
 $sites  =  [
 	'sitea.example.com'  =>  [
+		// This tells WordPress where to look for your wp-content folder contents (doesn't need to actually be wp-content)
 		'wpcontentdir'    =>  __DIR__ . '/sites/sitea.example.com', // Needs to be a full path to the site directory no trailing slash
+		// DB Stuff
 		'dbhost'          =>  'localhost',
 		'dbuser'          =>  'sitea',
 		'dbpass'          =>  'siteadbpass',
@@ -12,10 +14,10 @@ $sites  =  [
 		'dbprefix'        =>  'wp_',
 		'dbcharset'       =>  'utf8',
 		'dbcollate'       =>  '',
+		// WordPress settings
 		'wpdebug'         =>  false,
-		'wpcache'         =>  true, // needs to be true to make object caching to work
-		'supercachehome'  =>  __DIR__ . '/sites/sitea.example.com/cache/', // WP SuperCache uses a trailing slash on a full server path
-		// TODO: Add W3 Total Cache wp-config.php stuff
+		'wpcache'         =>  true, // needs to be true to make object caching work
+		// Salts below
 		'authkey'         =>  '',
 		'secureauthkey'   =>  '',
 		'loggedinkey'     =>  '',
@@ -24,5 +26,6 @@ $sites  =  [
 		'secureauthsalt'  =>  '',
 		'loggedinsalt'    =>  '',
 		'noncesalt'       =>  '',
+		// Put custom stuff below here and tie into shared_core/wp-config.php with the value
 	],
 ];
