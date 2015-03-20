@@ -1,2 +1,2 @@
-# shared_core_wordpress
-A file and folder structure for a shared core wordpress server environment without enabling multi-site
+# Shared Core WordPress
+A file and folder structure for a shared core WordPress server environment without enabling multi-site
