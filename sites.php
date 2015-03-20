@@ -4,7 +4,7 @@
 
 $sites  =  [
 	'sitea.example.com'  =>  [
-		'wpcontentdir'    =>  '/var/www/wphosts/sites/sitea.example.com', // Needs to be a full path to the site directory no trailing slash
+		'wpcontentdir'    =>  __DIR__ . '/sites/sitea.example.com', // Needs to be a full path to the site directory no trailing slash
 		'dbhost'          =>  'localhost',
 		'dbuser'          =>  'sitea',
 		'dbpass'          =>  'siteadbpass',
@@ -13,8 +13,8 @@ $sites  =  [
 		'dbcharset'       =>  'utf8',
 		'dbcollate'       =>  '',
 		'wpdebug'         =>  false,
-		'wpcache'         =>  true, // needs to be true to make object caching work
-		'supercachehome'  =>  '/var/www/wphosts/sites/sitea.majemedia.com/cache/', // WP SuperCache uses a trailing slash on a full server path
+		'wpcache'         =>  true, // needs to be true to make object caching to work
+		'supercachehome'  =>  __DIR__ . '/sites/sitea.example.com/cache/', // WP SuperCache uses a trailing slash on a full server path
 		// TODO: Add W3 Total Cache wp-config.php stuff
 		'authkey'         =>  '',
 		'secureauthkey'   =>  '',
