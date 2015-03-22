@@ -29,3 +29,8 @@ $sites  =  [
 		// Put custom stuff below here and tie into shared_core/wp-config.php with the value
 	],
 ];
+
+$plugin  =  [
+	// This space reserved for individual plugin requirements that aren't/shouldn't be overwritten by individual sites
+	// Example: WP-Super-Cache
+];
