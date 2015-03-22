@@ -1,6 +1,8 @@
 # Shared Core WordPress
 A file and folder structure for a shared core WordPress server environment without enabling multi-site
 
+**Please use the [wiki](https://github.com/majemedia/shared_core_wordpress/wiki/) for non-standard wordpress setups and plugin installation guides.
+
 ## Versions Included
 Downloaded from `https://wordpress.org/download/` on 3/20/2015 via `latest.tar.gz`
 
