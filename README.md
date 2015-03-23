@@ -77,7 +77,8 @@ Downloaded from `https://wordpress.org/download/` on 3/20/2015 via `latest.tar.g
         </Directory>
     </VirtualHost>
 
-
+## Permission Suggestions
+- [Permissions Wiki](https://github.com/majemedia/shared_core_wordpress/wiki/Permissions-Setup)
 
 ## Tested Against Versions
 - PHP 5.4
@@ -85,7 +86,6 @@ Downloaded from `https://wordpress.org/download/` on 3/20/2015 via `latest.tar.g
 - Ubuntu 14.04LTS
 
 ## TODO
-- permissions structure suggestions
 - bin scripts for permissions fixes
 
 ## Footnotes
