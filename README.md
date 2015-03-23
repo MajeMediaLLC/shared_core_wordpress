@@ -3,6 +3,19 @@ A file and folder structure for a shared core WordPress server environment witho
 
 **Please use the [wiki](https://github.com/majemedia/shared_core_wordpress/wiki/) for non-standard wordpress setups and plugin installation guides.**
 
+**Table of Contents**
+- [Versions Included](#versions-included)
+ - [Core](#core)
+ - [Plugins](#plugins--within-shared_plugins-)
+ - [Themes](#themes--within-shared_themes-)
+- [Setup Instructions](#setup-instructions)
+ - [How to use a shared theme or plugin](#how-to-use-a-shared-theme-or-plugin)
+ - [Example Virtual Host Setup](#example-virtualhost-setup)
+- [Permissions Suggestions](#permission-suggestions)
+- [Tested against versions](tested-against-versions)
+- [TODO](#todo)
+- [Footnotes](#footnotes)
+
 ## Versions Included
 Downloaded from `https://wordpress.org/download/` on 3/20/2015 via `latest.tar.gz`
 
@@ -23,7 +36,7 @@ Downloaded from `https://wordpress.org/download/` on 3/20/2015 via `latest.tar.g
 
 ## Setup Instructions
 1. Clone this repository to your server (following steps assume you're going to host sites from there)
-2. Inside the `sites/` directory move the `sitea.example.com` directory to the site[1] you want to host
+2. Inside the `sites/` directory move the `sitea.example.com` directory to the site[[1]](#footnotes) you want to host
 3. cd to your site's current `wp-content/themes` directory
 4. `cp -R . /path/to/shared_core_wordpress/sites/sitea.example.com/themes`
  - **Note**: if you want to have some themes shared; copy them into the `/path/to/shared_core_wordpress/shared_themes` directory
