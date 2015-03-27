@@ -100,6 +100,7 @@ Downloaded from `https://wordpress.org/download/` on 3/20/2015 via `latest.tar.g
 
 ## TODO
 - bin scripts for permissions fixes
+- Add alternative to the `sites.php` file by allowing apache server directives to be used via `$_SERVER` object. [credit /u/BecomingDitto](https://www.reddit.com/r/webhosting/comments/2zzavh/ive_published_a_github_project_detailing_a_folder/cpri7db?context=3)
 
 ## Footnotes
 [1]: You need to use the `ServerName` variable from the virtual hosts setup.
