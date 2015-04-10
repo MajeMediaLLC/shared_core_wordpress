@@ -1,3 +1,17 @@
+# For Redirecting to non-www (or vice versa) you need to always be sure you're checking
+# on the HTTP_HOST as a RewriteCond
+# Redirect to non-www (generic)
+#RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^www\.example\.com$ [NC]
+#RewriteRule ^(.*)$ http://example.com/$1 [R=301]
+
+# For redirecting non-ssl traffic to ssl traffic you need to always be sure you're checking
+# on the HTTP_HOST as a RewriteCond
+# Redirect non-ssl to ssl (maje)
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteCond %{HTTP_HOST} ^example\.com$ [NC]
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 
 # BEGIN WordPress
