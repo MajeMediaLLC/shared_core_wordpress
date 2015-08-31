@@ -1,3 +1,7 @@
+# ABANDONED
+
+I have abandoned this repo for now due to lack of time needed to develop the necessary server side scripts to maintain shared_plugins and shared_themes effectively.
+
 # Shared Core WordPress
 A file and folder structure for a shared core WordPress server environment without enabling multi-site
 
